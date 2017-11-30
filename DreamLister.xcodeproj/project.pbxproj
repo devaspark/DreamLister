@@ -23,6 +23,7 @@
 		B389BABC1FCD0F92002A90A3 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B389BABA1FCD0F92002A90A3 /* DreamLister.xcdatamodeld */; };
 		B389BABE1FCD0F92002A90A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B389BABD1FCD0F92002A90A3 /* Assets.xcassets */; };
 		B389BAC11FCD0F92002A90A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B389BABF1FCD0F92002A90A3 /* LaunchScreen.storyboard */; };
+		B39BC7441FCFBD810071A02C /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BC7431FCFBD810071A02C /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B389BABD1FCD0F92002A90A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B389BAC01FCD0F92002A90A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B389BAC21FCD0F92002A90A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39BC7431FCFBD810071A02C /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				B33D09801FCE82C20057A5CE /* MaterialView.swift */,
+				B39BC7431FCFBD810071A02C /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39BC7441FCFBD810071A02C /* ItemCell.swift in Sources */,
 				B33D09781FCE7C000057A5CE /* Image+CoreDataProperties.swift in Sources */,
 				B33D09761FCE7C000057A5CE /* Item+CoreDataProperties.swift in Sources */,
 				B33D09751FCE7C000057A5CE /* Item+CoreDataClass.swift in Sources */,
