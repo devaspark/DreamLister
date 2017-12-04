@@ -33,6 +33,9 @@
                                     <segment title="Title"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="wGP-Po-lBr"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xHq-V6-dwG">
                                 <rect key="frame" x="20" y="132" width="374" height="604"/>
@@ -160,7 +163,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mtn" translatesAutoresizingMaskIntoConstraints="NO" id="7M2-aD-9ho">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mtn" translatesAutoresizingMaskIntoConstraints="NO" id="7M2-aD-9ho">
                                 <rect key="frame" x="20" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="6gi-ie-0W2"/>
@@ -173,6 +176,9 @@
                                     <constraint firstAttribute="height" constant="100" id="HhY-6g-e6n"/>
                                     <constraint firstAttribute="width" constant="100" id="b4h-E2-aQ7"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="EUi-Vd-qyk" eventType="touchUpInside" id="arR-lY-KTu"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cQf-lX-lPZ">
                                 <rect key="frame" x="128" y="82" width="266" height="40"/>
@@ -263,12 +269,16 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="tgs-GC-PMC">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="CLA-wa-cLK">
                             <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="EUi-Vd-qyk" id="ndw-2A-sjE"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="5Pz-Pl-gDh" id="IIT-1v-vjS"/>
                         <outlet property="priceField" destination="3hX-K0-oDF" id="aZB-U4-ayP"/>
                         <outlet property="storePicker" destination="B4x-lE-hEk" id="Dy6-Aj-LQb"/>
+                        <outlet property="thumbImage" destination="7M2-aD-9ho" id="HCu-Sx-SMX"/>
                         <outlet property="titleField" destination="cQf-lX-lPZ" id="a03-Hc-QVE"/>
                     </connections>
                 </viewController>
